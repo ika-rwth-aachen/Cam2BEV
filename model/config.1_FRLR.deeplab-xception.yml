@@ -1,0 +1,30 @@
+input-training: [../data/1_FRLR/train/homography]
+label-training: ../data/1_FRLR/train/bev+occlusion
+max-samples-training: 100000
+input-validation: [../data/1_FRLR/val/homography]
+label-validation: ../data/1_FRLR/val/bev+occlusion
+max-samples-validation: 10000
+
+image-shape: [256, 512]
+one-hot-palette-input: one_hot_conversion/convert_10.xml
+one-hot-palette-label: one_hot_conversion/convert_9+occl.xml
+
+model: architecture/deeplab_xception.py
+# unetxst-homographies:
+epochs: 100
+batch-size: 5
+learning-rate: 1e-4
+loss-weights: [0.98684351, 2.2481491, 10.47452063, 4.78351389, 7.01028204, 8.41360361, 10.91633349, 2.38571558, 1.02473193, 2.79359197]
+early-stopping-patience: 20
+
+save-interval: 5
+output-dir: output
+
+# for training continuation, evaluation and prediction only
+class-names: [road, sidewalk, person, car, truck, bus, bike, obstacle, vegetation, occluded]
+# model-weights:
+
+# for predict.py only
+input-testing: [../data/1_FRLR/val/homography]
+max-samples-testing: 10000
+# prediction-dir:

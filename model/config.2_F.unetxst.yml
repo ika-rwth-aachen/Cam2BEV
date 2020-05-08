@@ -1,0 +1,30 @@
+input-training: [../data/2_F/train/front]
+label-training: ../data/2_F/train/bev+occlusion
+max-samples-training: 100000
+input-validation: [../data/2_F/val/front]
+label-validation: ../data/2_F/val/bev+occlusion
+max-samples-validation: 10000
+
+image-shape: [256, 512]
+one-hot-palette-input: one_hot_conversion/convert_10.xml
+one-hot-palette-label: one_hot_conversion/convert_3+occl.xml
+
+model: architecture/uNetXST.py
+unetxst-homographies: ../preprocessing/homography_converter/uNetXST_homographies/2_F.py
+epochs: 100
+batch-size: 5
+learning-rate: 1e-4
+loss-weights: [1.00752063, 5.06392476, 1.15378408, 1.16118375]
+early-stopping-patience: 20
+
+save-interval: 5
+output-dir: output
+
+# for training continuation, evaluation and prediction only
+class-names: [road, vehicle, obstacle, occluded]
+# model-weights:
+
+# for predict.py only
+input-testing: [../data/2_F/val/front]
+max-samples-testing: 10000
+# prediction-dir:
