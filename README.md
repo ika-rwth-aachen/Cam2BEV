@@ -4,7 +4,7 @@
 
 This repository contains the official implementation of our methodology for the computation of a semantically segmented bird's eye view (BEV) image given the images of multiple vehicle-mounted cameras as presented in our paper:
 
-> **A Sim2Real Deep Learning Approach for the Transformation of Images from Multiple Vehicle-Mounted Cameras to a Semantically Segmented Image in Bird’s Eye View** ([arXiv](https://arxiv.org/abs/XXXX.XXXXX))  
+> **A Sim2Real Deep Learning Approach for the Transformation of Images from Multiple Vehicle-Mounted Cameras to a Semantically Segmented Image in Bird’s Eye View** ([arXiv](https://arxiv.org/abs/2005.04078))  
 >
 > Lennart Reiher, [Bastian Lampe](https://www.ika.rwth-aachen.de/en/institute/staff/bastian-lampe-m-sc.html), and [Lutz Eckstein](https://www.ika.rwth-aachen.de/en/institute/management/univ-prof-dr-ing-lutz-eckstein.html)  
 > [Institute for Automotive Engineering (ika), RWTH Aachen University](https://www.ika.rwth-aachen.de/en/)
