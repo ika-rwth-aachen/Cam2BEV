@@ -74,7 +74,7 @@ def load_image(filename):
 def load_image_op(filename):
 
     img = tf.io.read_file(filename)
-    img = tf.image.decode_png(img)
+    img = tf.image.decode_png(img, channels=3)
     return img
 
 
