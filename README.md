@@ -7,7 +7,7 @@ This repository contains the official implementation of our methodology for the 
 > **A Sim2Real Deep Learning Approach for the Transformation of Images from Multiple Vehicle-Mounted Cameras to a Semantically Segmented Image in Bird’s Eye View**
 ([IEEE Xplore](https://ieeexplore.ieee.org/document/9294462), [arXiv](https://arxiv.org/abs/2005.04078))  
 >
-> Lennart Reiher, [Bastian Lampe](https://www.ika.rwth-aachen.de/en/institute/staff/bastian-lampe-m-sc.html), and [Lutz Eckstein](https://www.ika.rwth-aachen.de/en/institute/management/univ-prof-dr-ing-lutz-eckstein.html)  
+> [Lennart Reiher](https://github.com/lreiher), [Bastian Lampe](https://www.ika.rwth-aachen.de/en/institute/staff/bastian-lampe-m-sc.html), and [Lutz Eckstein](https://www.ika.rwth-aachen.de/en/institute/management/univ-prof-dr-ing-lutz-eckstein.html)  
 > [Institute for Automotive Engineering (ika), RWTH Aachen University](https://www.ika.rwth-aachen.de/en/)
 
 [![Cam2BEV_video](assets/video_preview.jpg)](https://youtu.be/TzXuwt56a0E)
