@@ -50,7 +50,7 @@ Cam2BEV
 
 ## Installation
 
-We suggest to setup a **Python 3.7** virtual environment (e.g. by using _virtualenv_ or _conda_). Inside the virtual environment, users can then use _pip_ to install all package dependencies. The most important packages are _TensorFlow 2.1_ and _OpenCV 4.2_
+We suggest to setup a **Python 3.8** virtual environment (e.g. by using _virtualenv_ or _conda_). Inside the virtual environment, users can then use _pip_ to install all package dependencies. The most important packages are _TensorFlow 2.7_ and _OpenCV 4.5_
 ```bash
 pip install -r requirements.txt
 ```
