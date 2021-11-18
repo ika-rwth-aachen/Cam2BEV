@@ -168,8 +168,10 @@ if not os.path.exists(checkpoint_dir):
 
 
 # create callbacks to be called after each epoch
+n_batches_train = len(files_train_label) // conf.batch_size
+n_batches_valid = len(files_valid_label)
 tensorboard_cb      = tf.keras.callbacks.TensorBoard(tensorboard_dir, update_freq="epoch", profile_batch=0)
-checkpoint_cb       = tf.keras.callbacks.ModelCheckpoint(os.path.join(checkpoint_dir, "e{epoch:03d}_weights.hdf5"), period=conf.save_interval, save_weights_only=True)
+checkpoint_cb       = tf.keras.callbacks.ModelCheckpoint(os.path.join(checkpoint_dir, "e{epoch:03d}_weights.hdf5"), save_freq=n_batches_train*conf.save_interval, save_weights_only=True)
 best_checkpoint_cb  = tf.keras.callbacks.ModelCheckpoint(os.path.join(checkpoint_dir, "best_weights.hdf5"), save_best_only=True, monitor="val_mean_io_u_with_one_hot_labels", mode="max", save_weights_only=True)
 early_stopping_cb   = tf.keras.callbacks.EarlyStopping(monitor="val_mean_io_u_with_one_hot_labels", mode="max", patience=conf.early_stopping_patience, verbose=1)
 callbacks = [tensorboard_cb, checkpoint_cb, best_checkpoint_cb, early_stopping_cb]
@@ -177,8 +179,6 @@ callbacks = [tensorboard_cb, checkpoint_cb, best_checkpoint_cb, early_stopping_c
 
 # start training
 print("Starting training...")
-n_batches_train = len(files_train_label) // conf.batch_size
-n_batches_valid = len(files_valid_label)
 model.fit(dataTrain,
           epochs=conf.epochs, steps_per_epoch=n_batches_train,
           validation_data=dataValid, validation_freq=1, validation_steps=n_batches_valid,

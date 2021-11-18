@@ -155,7 +155,7 @@ if args.v:
 # setup masks to later clip invalid parts from transformed images (inefficient, but constant runtime)
 masks = []
 for config in cameraConfigs:
-  mask = np.zeros((outputRes[0], outputRes[1], 3), dtype=np.bool)
+  mask = np.zeros((outputRes[0], outputRes[1], 3), dtype=bool)
   for i in range(outputRes[1]):
     for j in range(outputRes[0]):
       theta = np.rad2deg(np.arctan2(-j + outputRes[0] / 2 - droneConfig["YCam"] * pxPerM[0], i - outputRes[1] / 2 + droneConfig["XCam"] * pxPerM[1]))
