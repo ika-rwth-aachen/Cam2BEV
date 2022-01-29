@@ -50,7 +50,7 @@ Cam2BEV
 
 ## Installation
 
-We suggest to setup a **Python 3.8** virtual environment (e.g. by using _virtualenv_ or _conda_). Inside the virtual environment, users can then use _pip_ to install all package dependencies. The most important packages are _TensorFlow 2.7_ and _OpenCV 4.5_
+We suggest to setup a **Python 3.7** virtual environment (e.g. by using _virtualenv_ or _conda_). Inside the virtual environment, users can then use _pip_ to install all package dependencies. The results of our paper were achieved with _TensorFlow 2.1_ (_CUDA 10.1_ for GPU support). The repository has now been tested with _TensorFlow 2.5_, but support starts breaking with higher versions, since the _DeepLab_ model implementations do not support _TensorFlow>2.5_ due to non-trainable lambda layers.
 ```bash
 pip install -r requirements.txt
 ```
