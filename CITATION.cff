@@ -10,7 +10,7 @@ authors:
     family-names: Lampe
 preferred-citation:
   title: "A Sim2Real Deep Learning Approach for the Transformation of Images from Multiple Vehicle-Mounted Cameras to a Semantically Segmented Image in Bird's Eye View"
-  type: article
+  type: conference-paper
   authors:
     - given-names: Lennart
       family-names: Reiher
