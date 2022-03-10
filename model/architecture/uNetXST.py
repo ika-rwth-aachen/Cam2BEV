@@ -153,6 +153,6 @@ def get_network(input_shape, n_output_channels, n_inputs, thetas,
 
     # build final prediction layer
     prediction = Conv2D(filters=n_output_channels, kernel_size=kernel_size, padding="same", activation=activation)(reconstruction)
-    prediction = Activation("softmax")(prediction)
+    prediction = Activation("softmax", dtype=tf.float32)(prediction)
 
     return Model(inputs, prediction)

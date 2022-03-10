@@ -157,7 +157,7 @@ class BilinearInterpolation(Layer):
         regular_grids = self._make_regular_grids(batch_size, *output_size)
 
         # transform regular grid
-        sampled_grids = K.batch_dot(transformation, regular_grids)
+        sampled_grids = K.batch_dot(tf.cast(transformation, dtype=tf.float32), regular_grids)
 
         # homogeneous coords: divide by 3rd component w
         w = tf.math.reciprocal(sampled_grids[:, 2, :])
