@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "We hope that our paper and code can help your research. If this is the case, please cite it using the following metadata."
+
+title: "Cam2BEV"
+type: software
+repository-code: "https://github.com/ika-rwth-aachen/cam2bev"
+authors:
+  - given-names: Lennart
+    family-names: Reiher
+  - given-names: Bastian
+    family-names: Lampe
+
+preferred-citation:
+  title: "A Sim2Real Deep Learning Approach for the Transformation of Images from Multiple Vehicle-Mounted Cameras to a Semantically Segmented Image in Bird’s Eye View"
+  type: conference-paper
+  conference:
+    name: "2020 IEEE 23rd International Conference on Intelligent Transportation Systems (ITSC)"
+  month: 9
+  year: 2020
+  doi: "10.1109/ITSC45102.2020.9294462"
+  authors:
+    - given-names: Lennart
+      family-names: Reiher
+    - given-names: Bastian
+      family-names: Lampe
+    - given-names: Lutz
+      family-names: Eckstein
