@@ -7,16 +7,14 @@ This repository contains the official implementation of our methodology for the 
 > **A Sim2Real Deep Learning Approach for the Transformation of Images from Multiple Vehicle-Mounted Cameras to a Semantically Segmented Image in Bird’s Eye View**
 ([IEEE Xplore](https://ieeexplore.ieee.org/document/9294462), [arXiv](https://arxiv.org/abs/2005.04078))  
 >
-> [Lennart Reiher](https://github.com/lreiher), [Bastian Lampe](https://www.ika.rwth-aachen.de/en/institute/staff/bastian-lampe-m-sc.html), and [Lutz Eckstein](https://www.ika.rwth-aachen.de/en/institute/management/univ-prof-dr-ing-lutz-eckstein.html)  
+> [Lennart Reiher](https://github.com/lreiher), [Bastian Lampe](https://github.com/bastilam), and [Lutz Eckstein](https://www.ika.rwth-aachen.de/en/institute/team/univ-prof-dr-ing-lutz-eckstein.html)  
 > [Institute for Automotive Engineering (ika), RWTH Aachen University](https://www.ika.rwth-aachen.de/en/)
 
 > [!IMPORTANT]  
 > This repository is open-sourced and maintained by the [**Institute for Automotive Engineering (ika) at RWTH Aachen University**](https://www.ika.rwth-aachen.de/).  
 > **Deep Learning-based Perception** is one of many research topics within our [*Vehicle Intelligence & Automated Driving*](https://www.ika.rwth-aachen.de/en/competences/fields-of-research/vehicle-intelligence-automated-driving.html) domain.  
 > If you would like to learn more about how we can support your advanced driver assistance and automated driving efforts, feel free to reach out to us!  
-> &nbsp;&nbsp;&nbsp;&nbsp; *Timo Woopen - Manager Research Area Vehicle Intelligence & Automated Driving*  
-> &nbsp;&nbsp;&nbsp;&nbsp; *+49 241 80 23549*  
-> &nbsp;&nbsp;&nbsp;&nbsp; *timo.woopen@ika.rwth-aachen.de*  
+> :email: ***opensource@ika.rwth-aachen.de***
 
 [![Cam2BEV_video](assets/video_preview.jpg)](https://youtu.be/TzXuwt56a0E)
 
